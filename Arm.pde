@@ -2,13 +2,13 @@ class Arm {
 
   PVector anchor = new PVector(0, 0);
   PVector position = new PVector(0, 0);
-  float radius = random(20, 80);
+  float radius = random(5, 15);
 
   float angle = 0;
   float bound = random(TWO_PI);
   Arm parent;
   float frequency = random(0.01, 0.1);
-  color c = color(random(255),random(255),random(255),100);
+  color c = color(random(100,255),random(255),255,100);
 
   Arm(PVector p, Arm par) {
     anchor = p; 
